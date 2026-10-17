@@ -24,14 +24,6 @@ def findMaxConsecutiveOnes(nums: list[int]) -> int:
     return max_count 
 
 
-
-
-
-
-
-
-
-
 # Test Cases:
 nums1 = [1, 1, 0, 1, 1, 1]  # 3
 nums2 = [1, 0, 1, 1, 0, 1]  # 2
@@ -42,3 +34,11 @@ print(findMaxConsecutiveOnes(nums2))
 
 # Time Complexity: O(n) I traverse the array once 
 # Space Complexity: O(1) Im only using two variables 
+
+
+# Side Notes:
+# This function finds the longest consecutive sequence of 1s 
+# by scanning the list once. It resets the current streak when it sees a 0.
+
+# count_rn tracks the current streak, while max_count stores the largest streak found.
+# The time compexity is O(n) and the space complexitty is O(1)
